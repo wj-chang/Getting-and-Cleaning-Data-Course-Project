@@ -1,0 +1,30 @@
+#The code book of this project
+
+About the source data:
+The source data are from the Human Activity Recognition Using Smartphones Data Set. 
+A full description is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+About R script
+"run_analysis.R" performs the following 5 steps:
+
+1) Merges the training and the test sets to create one data set.
+1.1 Read files
+1.1.1 Read training datasets
+1.1.2 Read test datasets
+1.1.3 Read features
+1.1.4 Read activity labels
+1.2 Assign variable names
+1.3 Merging all datasets into one set
+2) Extracts only the measurements on the mean and standard deviation for each measurement
+2.1 Read column names
+2.2 Create vector to define ID, mean, and sd
+2.3 Create data subset
+3) Uses descriptive activity names to name the activities in the data set
+4) Appropriately labels the data set with descriptive variable names.
+4.1 Tidy column names
+4.2 Label new descriptive column names
+4.3 Remove activityType column
+5) Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+5.1 Averaging each activity and each subject as Tidy Data
+5.2 Export tidy data set
